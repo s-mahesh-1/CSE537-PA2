@@ -35,7 +35,7 @@ text_rounds = [des.encrypt(key, text)[1] for text in texts]
 
 hd_rounds = [hd_des_rounds(src_rounds, text_round) for text_round in text_rounds]
 
-plot(hd_rounds, "5 different hamming distances [1,2,3,4,5]", "HD of plaintext", "hamming distance of output text")
+plot(hd_rounds, "5 different hamming distances [1,2,3,4,5]", "rounds", "hamming distance")
 
 
 #iii. 5 diff keys
