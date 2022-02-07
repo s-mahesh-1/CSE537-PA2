@@ -21,7 +21,7 @@ def hd_str(hd, src, alphabet=[0,1], skip=-1):
 	# print(type(src))
 	src = string_to_bit_array(src)
 	if skip == -1:
-		skip = len(alphabet)
+		skip = len(src)+1
 
 	pos = set(random.sample([i for i in range(len(src)) if i%skip != skip-1], hd))
 
